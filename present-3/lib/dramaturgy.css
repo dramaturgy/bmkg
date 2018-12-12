@@ -1,0 +1,57 @@
+#navigator {
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 1.5rem;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 80rem;
+	height: 3rem;
+	padding: .5rem;
+	/*background-color: #EEE;*/
+	overflow: auto;
+	z-index: 999;
+	text-align: center;
+	opacity: .75;
+}
+
+#navigator.show {
+	display: block;
+}
+
+#navigator.hide {
+	display: none;
+}
+
+#navigator * {
+	box-sizing: border-box;
+}
+
+#navigator .nav-btn {
+	float: left;
+	margin: 0 .5em;
+	font-size: .85rem;
+	font-family: monospace;
+	font-weight: 600;
+	color: #0000FF;
+	background-color: #DDD;
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	border-radius: 50%;
+}
+
+#navigator .nav-btn.is-active {
+	-webkit-box-shadow: inset 0px 0px 0px 3px #0000FF;
+	-moz-box-shadow: inset 0px 0px 0px 3px #0000FF;
+	box-shadow: inset 0px 0px 0px 3px #0000FF;
+}
+
+#navigator .nav-btn:hover {
+	cursor: pointer;
+}
+
+#navigator .nav-btn:focus {
+	outline: 0;
+}
